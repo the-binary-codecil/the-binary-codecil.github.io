@@ -1,0 +1,232 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+body {
+    background: #fff;
+    font-family: "Nunito", sans-serif;
+}
+
+.blurb h2 {
+   color: #000;
+   font-weight: 500;
+   font-size: 2.5rem;
+}
+
+.blurb p {
+    color: #000;
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2;
+    text-align: justify;
+}
+
+.content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;    
+}
+
+#mainNavbar .nav-link {
+    color: white;
+    float: right;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #22a2dd;
+}
+
+#mainNavbar .navbar-brand {
+    color: #fff;
+    font-size: 2rem;
+}
+
+#headingGroup span {
+    color: #fff;
+}
+
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+.navbar.scrolled {
+    background: #020313;
+    transition: background 500ms;
+}
+
+@media (max-width: 1200px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+    .blurb h2 {
+        font-size: 2rem;
+    }
+}
+
+
+/* custom */
+
+.imgopen {
+    height: 100vh;
+    width: 100%;
+}
+.hh{
+    padding: 50px 0 0 0;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.cd {
+    padding-left: 20px; 
+}
+.hr {
+    padding: 0;
+    margin: 0;
+}
+/* footer */
+
+.mini-footer {
+    background:#020413;
+    text-align:center;
+    padding:15px 0
+   }
+   .mini-footer p {
+    margin:0;
+    line-height:26px;
+    font-size:15px;
+    color:#999
+   }
+   .mini-footer p a {
+    color:#5867dd
+   }
+   .mini-footer p a:hover {
+    color:#34bfa3
+   }
+
+   
+/* team */
+#team {
+    background: #eee !important;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #251262;
+    border-color: #251262;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #251262;
+    border-color: #251262;
+}
+
+section .section-title {
+    text-align: center;
+    color: #251262;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+    padding: 0;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    margin-bottom: 30px;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 280px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #251262 !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #251262 !important;
+}
+
+.frontside .card .card-body img {
+    width: 100px;
+    height: 100px;
+    border-radius: 30%;
+}

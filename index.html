@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    
+
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="app.css"> -->
+    <link rel="stylesheet" href="app.css">
+    <title>
+        THE BINARY CODECIL
+    </title>
+</head>
+
+
+<body>
+    
+    <div ng-app="teammates" ng-controller="myController">
+
+    <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+        <div class="container"><a href="#" class="navbar-brand"><i class="fa fa-home"></i>The Binary CodeCil</a></div>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container"></div>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#acts" class="nav-link">ACTIVITIES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#proj" class="nav-link">PROJECTS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#members" class="nav-link">TEAM</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="px-0">
+        <img class="img-fluid imgopen" src="https://www.desktopbackground.org/p/2013/07/14/606928_fairy-tail-natsu-wallpapers-high-quality-anime-wallpapers_1920x1200_h.jpg" alt="">
+    </section>
+    <div id="about"></div>
+    <section class="container-fluid px-0">
+        <div class="row align-items-center content">
+            <div class="col-md-12 text-center order-1 order-md-2">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                        <h2 class="card-title">ABOUT</h2>
+                        <hr class="hr">
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iste molestiae
+                            beatae, maiores deserunt
+                            in voluptatibus
+                            aspernatur architecto excepturi delectus soluta? Ipsa, deleniti dolorem hic consequatur
+                            repellat eveniet quidem
+                            voluptate necessitatibus dolorum delectus minus vitae, ut, veritatis sint ipsum magnam
+                            autem nam ex deserunt debitis
+                            eaque ratione! Nobis, quidem assumenda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="members"></div>
+    <section class="container-fluid px-0">
+            <div class="row align-items-center content">
+                <div class="col-lg-12 mb-12">
+                    <div class="card cd">
+                        <h2 class="card-title text-center hh">OUR TEAM</h2>
+                        <hr class="hr">
+                        <div class="card-body">
+                            <div class="container">
+                            <div class="row">
+                                <!-- Team member -->
+                            <div data-ng-repeat="participant in teamMembers" class="col-xs-12 col-sm-6 col-md-4">
+                                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                                        <div class="mainflip">
+                                            <div class="frontside">
+                                                <div class="card">
+                                                    <div class="card-body text-center  mt-4">
+                                                        <p><img class=" img-fluid" src={{participant.photo}}  alt="card image"></p>
+                                                        <h4 class="card-title">{{participant.name}}</h4>
+                                                        <p class="card-text">{{participant.study}}</p>
+                                                    </div>
+                                                    <a href="#" class="btn btn-primary btn-sm"></a>
+                                                </div>
+                                            </div>
+                                            <div class="backside">
+                                                <div class="card">
+                                                    <div class="card-body text-center mt-4">
+                                                        <h4 class="card-title">{{participant.name}}</h4>
+                                                        <p class="card-text">{{participant.paragraph}}</p>
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item">
+                                                                <a class="social-icon text-xs-center" target="_blank" href={{participant.facebook}}>
+                                                                    <i class="fa fa-facebook"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a class="social-icon text-xs-center" target="_blank" href={{participant.instagram}}>
+                                                                    <i class="fa fa-instagram"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a class="social-icon text-xs-center" target="_blank" href={{participant.github}}>
+                                                                    <i class="fa fa-github"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a class="social-icon text-xs-center" target="_blank" href={{participant.linkedin}}>
+                                                                    <i class="fa fa-linkedin"></i>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <a href="#" class="btn btn-primary btn-sm"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- ./Team member -->
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <footer>
+        <div class="mini-footer">
+            <div class="container">
+                <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright-text">
+                    <p> Created by
+                        <a href="https://GIthub.com/thebishaldeb">Bishal Deb</a> ❤
+                    </p>
+                    </div>
+                    <div class="go_top">
+                    <span class="icon-arrow-up"></span>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    </div>
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+        var app = angular.module('teammates', []);
+            app.controller('myController', function ($scope) {
+                $scope.name = "Bishal";
+                $scope.teamMembers = [
+                    {
+                        name: "Bishal Deb",
+                        photo: "https://avatars3.githubusercontent.com/u/36695144?s=460&v=4",
+                        study: "B. Tech - CSE",
+                        paragraph: "Sophomore in Computer Science & Engg in Tezpur University.",
+                        github: "https://github.com/thebishaldeb",
+                        facebook: "https://www.facebook.com/bishal.deb.5811",
+                        email: "bishaldeb656@gmail.com",
+                        linkedin: "https://linkedin.com/in/bishal-deb-0322b6148/",
+                        instagram: "https://www.instagram.com/the_zalophus/"
+                    },
+                    {
+                        name: "Ananya Deka",
+                        photo: "",
+                        study: "B. Tech - CSE",
+                        paragraph: "",
+                        github: "",
+                        facebook: "",
+                        email: "",
+                        linkedin: "",
+                        instagram: ""
+                    },
+                    {
+                        name: "Runanka Roy",
+                        photo: "",
+                        study: "B. Tech - CSE",
+                        paragraph: "",
+                        github: "",
+                        facebook: "",
+                        email: "",
+                        linkedin: "",
+                        instagram: ""
+                    },
+                    {
+                        name: "Deepankar Acharyya",
+                        photo: "",
+                        study: "B. Tech - CSE",
+                        paragraph: "",
+                        github: "",
+                        facebook: "",
+                        email: "",
+                        linkedin: "",
+                        instagram: ""
+                    },
+                    {
+                        name: "Adil Bin Bhutto",
+                        photo: "",
+                        study: "B. Tech - CSE",
+                        paragraph: "",
+                        github: "",
+                        facebook: "",
+                        email: "",
+                        linkedin: "",
+                        instagram: ""
+                    },
+                    {
+                        name: "Parikshit Saikia",
+                        photo: "",
+                        study: "B. Tech - CSE",
+                        paragraph: "",
+                        github: "",
+                        facebook: "",
+                        email: "",
+                        linkedin: "",
+                        instagram: ""
+                    }
+                ];
+            });
+    </script>
+</body>
+
+</html>
