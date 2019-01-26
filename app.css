@@ -85,6 +85,12 @@ body {
     padding: 0;
     margin: 0;
 }
+
+.headimg:hover {
+    box-shadow: 0 0 100px black;
+    transition: ease-in 300ms;
+}
+
 /* footer */
 
 .mini-footer {
